@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	var basket = [
+		{
+			name: "Jacket",
+			price: 5000,
+			quantity: 1,
+
+		},
+		{
+			name: "T-shirt",
+			price: 500,
+			quantity: 5,
+		},
+		{
+			name: "Socks",
+			price: 200,
+			quantity: 10,
+		}
+	]
+	function countBasketPrice (items) {
+		var sum = 0;
+		for (var i = 0; i < items.length; i++) {
+			sum += items[i].price * items[i].quantity
+		}
+		return sum;
+	}
+	console.log(countBasketPrice(basket));
+</script>
